@@ -380,7 +380,10 @@ a:hover{
 
 .About-top-container {
   text-align: center;
-  padding: 50px 0;
+  background-position: center;
+  padding-top: 50px;
+  position: relative;
+  height: 120vh;
 }
 
 .header-text {
@@ -388,6 +391,7 @@ a:hover{
 }
 
 .header-text h1 {
+  min-width: 300px;
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -882,13 +886,16 @@ details[open] div{
 .contact-info h1{
   font-size: 1rem;
 }
+.About-top-container {
+  height: 250vh;
+}
 
 .image-container {
   display: block;
 }
 .sing-image-container {
   width: 80%;
-  margin-left: 3px;
+  margin-left: 35px;
 }
  
 }
