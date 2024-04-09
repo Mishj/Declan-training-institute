@@ -377,46 +377,72 @@ a:hover{
 
  /* About page styling */
 
- .About-top-container {
+
+.About-top-container {
   text-align: center;
-  background-color:#232324 ;
-  padding-top: 50px;
-  height: 120vh;
- 
+  padding: 50px 0;
+}
+
+.header-text {
+  margin-bottom: 40px;
+}
+
+.header-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.header-text h2 {
+  font-size: 24px;
+  color:#dadadb;
 }
 
 .image-container {
   display: flex;
   justify-content: space-around;
-  
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.sing-image-container{
-  margin-left: 4rem;
+
+.sing-image-container {
+  width: 30%;
+  margin-bottom: 20px;
 }
 
 .image-wrapper {
-  border: 10px solid;
-  border-color: #11cdd4;
-  width: 15rem; /* Adjust container width as needed */
-  height: 15rem; /* Adjust container height as needed */
-  border-radius: 50%; /* Make the container rounded */
-  overflow: hidden; /* Hide the parts of the image outside the container */
-
+  overflow: hidden;
 }
 
 .image-wrapper img {
-  width: 100%; /* Make the image fill the container */
-  height: 100%; /* Make the image fill the container */
-  border-radius: 50%; /* Make the image rounded */
+  max-width: 100%;
+  height: auto;
 }
 
-.image-text{
-  width: 70%;
+.image-text p {
+  font-size: 18px;
+  color: #dadadb;
 }
 
-.image-text p{
-  color:#e0dddd;
+.about-middle-container {
+  text-align: center;
+  padding: 50px 0;
 }
+
+.about-middle-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-middle-container p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Media Queries */
+
+
+
+
 .gradient {
   height: 7px; /* Increase the height to make the gradient more visible */
   background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, indigo, violet); /* Gradient colors */
@@ -757,31 +783,11 @@ details[open] div{
   font-size: 12px;
 }
 
-/* About styling media query */
-.About-top-container {
-  height: 250vh;
- }
-
-.About-top-container .header-text {
-  padding: 50px;
-}
-
-.image-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  
-}
-
-
-
-
-
-
-
-
-
 }
 @media only screen and (min-width: 350px) and (max-width: 600px)  {
+  body {
+    padding: 10px;
+    }
   .navbar{
     display: block;
   }
@@ -877,15 +883,13 @@ details[open] div{
   font-size: 1rem;
 }
 
-/* about media query */
-.About-top-container {
-  height: 300vh;
- }
-.image-container{
+.image-container {
   display: block;
-  margin-left: 50px;
-  }
-
+}
+.sing-image-container {
+  width: 80%;
+  margin-left: 3px;
+}
  
 }
  
