@@ -707,7 +707,9 @@ details[open] div{
 
 @media only screen and (min-width: 601px) and (max-width: 930px) {
   .navbar{
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navlinks{
@@ -796,9 +798,11 @@ details[open] div{
   body {
     padding: 10px;
     }
-  .navbar{
-    display: block;
-  }
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   
   .navlinks{
     display: none;
