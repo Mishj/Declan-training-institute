@@ -840,6 +840,9 @@ details[open] div{
   
   grid-template-columns: repeat(1, 1fr);
 }
+  .desc{
+  width: 100%;
+}
 .second-middle-container {
   display: block;
   text-align: center;
